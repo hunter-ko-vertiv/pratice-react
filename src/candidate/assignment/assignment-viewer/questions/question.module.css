@@ -1,0 +1,38 @@
+.questionLayout {
+    padding: 1rem;
+}
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 1rem;
+}
+
+code{
+    color: #546e7a;
+    background-color: #f7f9fa;
+    padding: 2px 4px;
+    font-size: 13px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+.questionTitle {
+    margin-top: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+pre {
+    white-space: pre-wrap;
+    background: #f7f9fa;
+    padding: 10px 15px;
+    color: #263238;
+    line-height: 1.6;
+    font-size: 13px;
+    border-radius: 3px;
+    margin-top: 1rem;
+    margin-bottom: 1em;
+    overflow: auto;
+}

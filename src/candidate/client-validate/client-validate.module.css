@@ -1,0 +1,76 @@
+.layout {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.group {
+    padding-bottom: 6rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 4rem;
+    color: white;
+}
+
+.label {
+    padding: .5rem 1rem;
+    background-color: #FFFFFF;
+    color: black;
+    border-radius: .25rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+
+}
+
+.candidateField {
+    position: relative;
+}
+
+.confirmInput {
+    outline: none;
+    font-size: 1rem;
+    padding: .5rem .5rem;
+    background-color: #555555;
+    color: white;
+    border: 0;
+    border-radius: .25rem;
+    width: 270px;
+    box-sizing: border-box;
+}
+
+.confirmInputError {
+    background-color: #ffd3d3;
+    border: #fa5757 1px solid;
+    color: #3F3F3F;
+}
+
+.errorMessage {
+    margin-top: .25rem;
+    position: absolute;
+    color: #fa5757;
+    text-align: left;
+}
+
+.confirmForm {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.submitBtn {
+    padding: .5rem 1rem;
+    margin-left: 1rem;
+    background-color: #62CEBA;
+    color: white;
+    border: 0;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: rgba(98,206,186, .9) !important;
+}

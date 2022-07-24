@@ -1,0 +1,42 @@
+.dialogLayout {
+    padding: 2rem 2rem;
+}
+
+.header {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.content {
+    max-width: 28rem;
+    padding: 2rem 1.5rem;
+    background-color: #ECECEC;
+    box-sizing: border-box;
+}
+
+.footer {
+    padding: .5rem;
+}
+
+.startBtn {
+    font-size: 24px;
+    padding: .5rem 2rem;
+    background: #62CEBA;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    border-radius: .5rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background: rgba(98, 206, 186, 0.9);
+}
+
+.strong {
+    color: #ff3232;
+    font-weight: bold;
+}
