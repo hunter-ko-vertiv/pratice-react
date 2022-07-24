@@ -1,7 +1,14 @@
 import { useCountDown } from "../../../hooks";
+import { useEffect } from "react";
 
 export const TimeCounter = (props) => {
-    const [hours, minutes, seconds] = useCountDown(props.remainSeconds);
+
+    useEffect(() => {
+        setCountDown(props.remainSeconds)
+    }, [props]);
+
+
+    const [hours, minutes, seconds, setCountDown] = useCountDown(props.remainSeconds);
 
     if (hours + minutes + seconds > 0) {
         return <div>{timeFormat(hours)} : {timeFormat(minutes)} : {timeFormat(seconds)}</div>

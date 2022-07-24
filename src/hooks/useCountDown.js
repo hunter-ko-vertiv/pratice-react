@@ -14,7 +14,7 @@ export const useCountDown = (remainSecond) => {
             clearInterval(interval);
         }
     }, [remainSecond]);
-    return getReturnValue(countDown);
+    return [...getReturnValue(countDown), setCountDown];
 }
 
 const getReturnValue = (countDown) => {

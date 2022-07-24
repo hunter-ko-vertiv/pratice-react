@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export const Header = (props) => {
     const [candidateName, setCandidateName] = useState('');
-    const [remainSec, setRemainSec] = useState(-1);
+    const [remainSec, setRemainSec] = useState(10);
     useEffect(
         () => {
             fetch('/login/',).then(res => res.json()).then(
