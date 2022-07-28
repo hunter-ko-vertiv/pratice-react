@@ -19,7 +19,7 @@ export const FileUpload = forwardRef((props, ref) => {
             const formBody = new FormData();
             formBody.append("assignment_file", fileUploadRef.current.files[0]);
 
-            fetch('/assignment', {
+            fetch('/backend/assignment', {
                 method: "POST",
                 headers: {
                     'Content-Type': 'multipart/form-data'

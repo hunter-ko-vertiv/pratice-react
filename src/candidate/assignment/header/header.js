@@ -9,7 +9,7 @@ export const Header = (props) => {
     const [remainSec, setRemainSec] = useState(10);
     useEffect(
         () => {
-            fetch('/assignment',).then(res => res.json()).then(
+            fetch('/backend/assignment',).then(res => res.json()).then(
                 res => {
                     setCandidateName(res.candidate_name);
                     setRemainSec(+res.time);
