@@ -42,12 +42,12 @@ export const ClientValidate = () => {
                 <label className={styles.label}>Candidate</label>
                 <div className={styles.candidateField}>
                     <input type="text"
-                           className={styles.confirmInput + ' ' + (errors.candidate_number? styles.confirmInputError: '') }
-                           {...register("candidate_number", {required: "This field is required"})}
-                           placeholder={`${errors.candidate_number? '': 'Please input your candidate number'}`} />
-                    {errors.candidate_number &&
+                           className={styles.confirmInput + ' ' + (errors.candidate_account? styles.confirmInputError: '') }
+                           {...register("candidate_account", {required: "This field is required"})}
+                           placeholder={`${errors.candidate_account? '': 'Please input your candidate number'}`} />
+                    {errors.candidate_account &&
                         <div className={styles.errorMessage}>
-                            {errors.candidate_number.message}
+                            {errors.candidate_account.message}
                         </div>}
                 </div>
                 <button type="submit" className={styles.submitBtn}>Confirm</button>
