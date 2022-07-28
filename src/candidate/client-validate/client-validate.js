@@ -13,11 +13,10 @@ export const ClientValidate = () => {
 
     const onSubmit = async (e) => {
         try {
-            await fetch('/login/', {
+            await fetch('/backend/', {
                 method: "POST",
                 body: JSON.stringify(e)
             }).then(res => {
-                console.log(res);
                 if (res.ok) {
                     return res.json();
                 } else {
