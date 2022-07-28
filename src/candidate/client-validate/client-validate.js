@@ -29,7 +29,7 @@ export const ClientValidate = () => {
             })
         } catch(err) {
             console.log(err);
-            setError("candidate_number", {type: "confirmFail", message: "Please enter valid number"});
+            setError("candidate_account", {type: "confirmFail", message: "Please enter valid number"});
         }
 
 
