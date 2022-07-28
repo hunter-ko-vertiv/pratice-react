@@ -17,7 +17,7 @@ export const FileUpload = forwardRef((props, ref) => {
     useImperativeHandle(ref, () => ({
         uploadFile: () => {
             const formBody = new FormData();
-            formBody.append("assignment_file", fileUploadRef.current.files[0]);
+            formBody.append("zipFile", fileUploadRef.current.files[0]);
 
             fetch('/backend/assignment', {
                 method: "POST",
